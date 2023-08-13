@@ -1,5 +1,5 @@
-import 'package:dart_ffi/dart_ffi.dart' as dart_ffi;
+import 'package:dart_ffi/fibonacci.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${dart_ffi.calculate()}!');
+void main() {
+  Fibonacci().executeAllFor(32);
 }
