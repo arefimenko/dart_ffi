@@ -1,0 +1,5 @@
+output: lib/calculator.dart
+name: CalculatorBindings
+headers:
+  entry-points:
+    - "cpp/calculator.h"

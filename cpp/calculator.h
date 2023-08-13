@@ -1,50 +1,27 @@
-#include <iostream>
-
 #ifdef __cplusplus
 extern "C" {
 #endif
 
 typedef void (*IntCallback)(int);
 
-class Calculator {
+typedef struct Calculator {
     int result;
     IntCallback resultCallback;
+} Calculator;
 
-public:
-    explicit Calculator(IntCallback callback) {
-        resultCallback = callback;
-        result = 0;
-    }
+struct Calculator *createCalc(IntCallback callback);
 
-    explicit Calculator(int initialResult, IntCallback callback) {
-        resultCallback = callback;
-        result = initialResult;
-    }
+struct Calculator *createCalcWithInitialValue(int initial, IntCallback callback);
 
-    void add(int a) { resultCallback(result += a); }
+void add(struct Calculator *calc, int a);
 
-    void subtract(int a) { resultCallback(result -= a); }
+void subtract(struct Calculator *calc, int a);
 
-    void divide(int a) { resultCallback(result /= a); }
+void divide(struct Calculator *calc, int a);
 
-    void multiply(int a) { resultCallback(result *= a); }
+void multiply(struct Calculator *calc, int a);
 
-    int getResult() const { return result; }
-};
-
-Calculator *createCalc(IntCallback callback);
-
-Calculator *createCalcWithInitialValue(int initial, IntCallback callback);
-
-void add(Calculator *calc, int a);
-
-void subtract(Calculator *calc, int a);
-
-void divide(Calculator *calc, int a);
-
-void multiply(Calculator *calc, int a);
-
-int getResult(Calculator *calc);
+int getResult(struct Calculator *calc);
 
 #ifdef __cplusplus
 }
