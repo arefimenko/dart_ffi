@@ -1,0 +1,9 @@
+LIBRARY calculator
+EXPORTS
+    createCalc
+    createCalcWithInitialValue
+    add
+    subtract
+    divide
+    multiply
+    getResult
