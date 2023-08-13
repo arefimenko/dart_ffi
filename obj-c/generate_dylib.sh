@@ -1,0 +1,1 @@
+clang -framework Foundation objc.m -o objc.dylib
