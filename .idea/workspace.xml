@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25451b48-4cd4-4c80-b789-024ffd969afd" name="Changes" comment="feat: dart calculator bindings to cpp">
-      <change afterPath="$PROJECT_DIR$/lib/calculator_bindings.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/dart_ffi.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/dart_ffi.dart" afterDir="false" />
+    <list default="true" id="25451b48-4cd4-4c80-b789-024ffd969afd" name="Changes" comment="feat: cpp calculator callback example">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cpp/calculator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/calculator.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cpp/calculator.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/calculator.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/calculator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/calculator.dart" afterDir="false" />
@@ -70,11 +68,19 @@
       <option name="presentableId" value="Default" />
       <updated>1691945565841</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: cpp calculator callback example">
+      <created>1691949286565</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691949286565</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: dart calculator bindings to cpp" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: dart calculator bindings to cpp" />
+    <MESSAGE value="feat: cpp calculator callback example" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: cpp calculator callback example" />
   </component>
 </project>
