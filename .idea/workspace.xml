@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="25451b48-4cd4-4c80-b789-024ffd969afd" name="Changes" comment="feat: dart calculator bindings to cpp">
+      <change afterPath="$PROJECT_DIR$/lib/calculator_bindings.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/dart_ffi.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/dart_ffi.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/calculator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/calculator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/calculator.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/calculator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/calculator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/calculator.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2TwE6D750bXbiGaKonqWfxs4xZk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/Users/arefimenko/dev/personal/dart_ffi",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="filePath" value="$PROJECT_DIR$/bin/dart_ffi.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="feat: dart calculator bindings to cpp">
+      <created>1691944557547</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691944557547</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25451b48-4cd4-4c80-b789-024ffd969afd" name="Changes" comment="feat: dart calculator bindings to cpp" />
+      <created>1691945565841</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691945565841</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: dart calculator bindings to cpp" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: dart calculator bindings to cpp" />
+  </component>
+</project>

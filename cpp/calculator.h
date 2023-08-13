@@ -4,24 +4,45 @@ extern "C" {
 
 typedef void (*IntCallback)(int);
 
-typedef struct Calculator {
+class Calculator {
     int result;
     IntCallback resultCallback;
-} Calculator;
 
-struct Calculator *createCalc(IntCallback callback);
+public:
+    explicit Calculator(IntCallback callback) {
+        resultCallback = callback;
+        result = 0;
+    }
 
-struct Calculator *createCalcWithInitialValue(int initial, IntCallback callback);
+    explicit Calculator(int initialResult, IntCallback callback) {
+        resultCallback = callback;
+        result = initialResult;
+    }
 
-void add(struct Calculator *calc, int a);
+    void add(int a) { resultCallback(result += a); }
 
-void subtract(struct Calculator *calc, int a);
+    void subtract(int a) { resultCallback(result -= a); }
 
-void divide(struct Calculator *calc, int a);
+    void divide(int a) { resultCallback(result /= a); }
 
-void multiply(struct Calculator *calc, int a);
+    void multiply(int a) { resultCallback(result *= a); }
 
-int getResult(struct Calculator *calc);
+    int getResult() const { return result; }
+};
+
+Calculator *createCalc(IntCallback callback);
+
+Calculator *createCalcWithInitialValue(int initial, IntCallback callback);
+
+void add(Calculator *calc, int a);
+
+void subtract(Calculator *calc, int a);
+
+void divide(Calculator *calc, int a);
+
+void multiply(Calculator *calc, int a);
+
+int getResult(Calculator *calc);
 
 #ifdef __cplusplus
 }

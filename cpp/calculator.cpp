@@ -1,25 +1,19 @@
 #include "calculator.h"
 
 Calculator *createCalc(IntCallback callback) {
-    struct Calculator *calc;
-    calc->result = 0;
-    calc->resultCallback = callback;
-    return calc;
+    return new Calculator(callback);
 }
 
 Calculator *createCalcWithInitialValue(int initial, IntCallback callback) {
-    struct Calculator *calc;
-    calc->result = initial;
-    calc->resultCallback = callback;
-    return calc;
+    return new Calculator(initial, callback);
 }
 
-void add(Calculator *calc, int a) { calc->resultCallback(calc->result += a); }
+void add(Calculator *calc, int a) { calc->add(a); }
 
-void subtract(Calculator *calc, int a) { calc->resultCallback(calc->result -= a); }
+void subtract(Calculator *calc, int a) { calc->subtract(a); }
 
-void divide(Calculator *calc, int a) { calc->resultCallback(calc->result /= a); }
+void divide(Calculator *calc, int a) { calc->divide(a); }
 
-void multiply(Calculator *calc, int a) { calc->resultCallback(calc->result *= a); }
+void multiply(Calculator *calc, int a) { calc->multiply(a); }
 
-int getResult(Calculator *calc) { return calc->result; }
+int getResult(Calculator *calc) { return calc->getResult(); }

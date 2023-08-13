@@ -19,7 +19,13 @@ class CalculatorBindings {
           lookup)
       : _lookup = lookup;
 
-  ffi.Pointer<Calculator> createCalc(
+  late final ffi.Pointer<ffi.Int> _Calculator = _lookup<ffi.Int>('Calculator');
+
+  int get Calculator => _Calculator.value;
+
+  set Calculator(int value) => _Calculator.value = value;
+
+  ffi.Pointer<ffi.Int> createCalc(
     IntCallback callback,
   ) {
     return _createCalc(
@@ -27,13 +33,13 @@ class CalculatorBindings {
     );
   }
 
-  late final _createCalcPtr = _lookup<
-          ffi.NativeFunction<ffi.Pointer<Calculator> Function(IntCallback)>>(
-      'createCalc');
-  late final _createCalc = _createCalcPtr
-      .asFunction<ffi.Pointer<Calculator> Function(IntCallback)>();
+  late final _createCalcPtr =
+      _lookup<ffi.NativeFunction<ffi.Pointer<ffi.Int> Function(IntCallback)>>(
+          'createCalc');
+  late final _createCalc =
+      _createCalcPtr.asFunction<ffi.Pointer<ffi.Int> Function(IntCallback)>();
 
-  ffi.Pointer<Calculator> createCalcWithInitialValue(
+  ffi.Pointer<ffi.Int> createCalcWithInitialValue(
     int initial,
     IntCallback callback,
   ) {
@@ -45,13 +51,13 @@ class CalculatorBindings {
 
   late final _createCalcWithInitialValuePtr = _lookup<
       ffi.NativeFunction<
-          ffi.Pointer<Calculator> Function(
+          ffi.Pointer<ffi.Int> Function(
               ffi.Int, IntCallback)>>('createCalcWithInitialValue');
   late final _createCalcWithInitialValue = _createCalcWithInitialValuePtr
-      .asFunction<ffi.Pointer<Calculator> Function(int, IntCallback)>();
+      .asFunction<ffi.Pointer<ffi.Int> Function(int, IntCallback)>();
 
   void add(
-    ffi.Pointer<Calculator> calc,
+    ffi.Pointer<ffi.Int> calc,
     int a,
   ) {
     return _add(
@@ -61,13 +67,13 @@ class CalculatorBindings {
   }
 
   late final _addPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(ffi.Pointer<Calculator>, ffi.Int)>>('add');
+          ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Int>, ffi.Int)>>(
+      'add');
   late final _add =
-      _addPtr.asFunction<void Function(ffi.Pointer<Calculator>, int)>();
+      _addPtr.asFunction<void Function(ffi.Pointer<ffi.Int>, int)>();
 
   void subtract(
-    ffi.Pointer<Calculator> calc,
+    ffi.Pointer<ffi.Int> calc,
     int a,
   ) {
     return _subtract(
@@ -77,13 +83,13 @@ class CalculatorBindings {
   }
 
   late final _subtractPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(ffi.Pointer<Calculator>, ffi.Int)>>('subtract');
+          ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Int>, ffi.Int)>>(
+      'subtract');
   late final _subtract =
-      _subtractPtr.asFunction<void Function(ffi.Pointer<Calculator>, int)>();
+      _subtractPtr.asFunction<void Function(ffi.Pointer<ffi.Int>, int)>();
 
   void divide(
-    ffi.Pointer<Calculator> calc,
+    ffi.Pointer<ffi.Int> calc,
     int a,
   ) {
     return _divide(
@@ -93,13 +99,13 @@ class CalculatorBindings {
   }
 
   late final _dividePtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(ffi.Pointer<Calculator>, ffi.Int)>>('divide');
+          ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Int>, ffi.Int)>>(
+      'divide');
   late final _divide =
-      _dividePtr.asFunction<void Function(ffi.Pointer<Calculator>, int)>();
+      _dividePtr.asFunction<void Function(ffi.Pointer<ffi.Int>, int)>();
 
   void multiply(
-    ffi.Pointer<Calculator> calc,
+    ffi.Pointer<ffi.Int> calc,
     int a,
   ) {
     return _multiply(
@@ -109,13 +115,13 @@ class CalculatorBindings {
   }
 
   late final _multiplyPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(ffi.Pointer<Calculator>, ffi.Int)>>('multiply');
+          ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Int>, ffi.Int)>>(
+      'multiply');
   late final _multiply =
-      _multiplyPtr.asFunction<void Function(ffi.Pointer<Calculator>, int)>();
+      _multiplyPtr.asFunction<void Function(ffi.Pointer<ffi.Int>, int)>();
 
   int getResult(
-    ffi.Pointer<Calculator> calc,
+    ffi.Pointer<ffi.Int> calc,
   ) {
     return _getResult(
       calc,
@@ -123,17 +129,10 @@ class CalculatorBindings {
   }
 
   late final _getResultPtr =
-      _lookup<ffi.NativeFunction<ffi.Int Function(ffi.Pointer<Calculator>)>>(
+      _lookup<ffi.NativeFunction<ffi.Int Function(ffi.Pointer<ffi.Int>)>>(
           'getResult');
   late final _getResult =
-      _getResultPtr.asFunction<int Function(ffi.Pointer<Calculator>)>();
-}
-
-final class Calculator extends ffi.Struct {
-  @ffi.Int()
-  external int result;
-
-  external IntCallback resultCallback;
+      _getResultPtr.asFunction<int Function(ffi.Pointer<ffi.Int>)>();
 }
 
 typedef IntCallback
