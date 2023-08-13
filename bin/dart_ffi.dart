@@ -19,7 +19,6 @@ void main() {
   final swiftClass = swift_bindings.SwiftClass.new1(swiftBindings);
   print('--- SwiftBindings ---');
   print(swiftClass.sayHello());
-  print('someField = ${swiftClass.someField}');
   swiftClass.someField = 321;
-  print('someField = ${swiftClass.someField}');
+  print(swiftClass.sayHello());
 }

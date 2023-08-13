@@ -2,7 +2,7 @@ import Foundation
 
 @objc public class SwiftClass: NSObject {
   @objc public func sayHello() -> String {
-    return "Hello from Swift!";
+    return "Hello from Swift \(someField)!";
   }
 
   @objc public var someField = 123;
