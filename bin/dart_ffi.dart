@@ -1,5 +1,11 @@
-import 'package:dart_ffi/dart_ffi.dart' as dart_ffi;
+import 'package:dart_ffi/java.dart';
+import 'package:jni/jni.dart';
+import 'package:path/path.dart' as path;
 
-void main(List<String> arguments) {
-  print('Hello world: ${dart_ffi.calculate()}!');
+void main() {
+  Jni.spawn(
+    dylibDir: path.join('build', 'jni_libs'),
+    classPath: ['java'],
+  );
+  print(JavaExample.sum(1, 2));
 }

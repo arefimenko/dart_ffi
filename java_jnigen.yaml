@@ -1,0 +1,12 @@
+output:
+  c:
+    library_name: java
+    path: lib/java/
+  dart:
+    path: lib/java.dart
+    structure: single_file
+
+source_path:
+  - 'java/'
+classes:
+  - 'JavaExample'
