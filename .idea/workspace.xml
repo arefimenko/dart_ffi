@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25451b48-4cd4-4c80-b789-024ffd969afd" name="Changes" comment="feat: cpp calculator callback example">
+    <list default="true" id="25451b48-4cd4-4c80-b789-024ffd969afd" name="Changes" comment="fix: reimplement cpp example into correct way">
+      <change afterPath="$PROJECT_DIR$/cpp_examples/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp_examples/cpp_examples.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp_examples/cpp_examples.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp_examples_ffigen.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generate_cpp_examples.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/cpp_examples_bindings.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/calculator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/calculator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/calculator.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/calculator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/calculator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/calculator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/dart_ffi.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/dart_ffi.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +50,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/cpp_examples" />
     </key>
   </component>
   <component name="RunManager">
@@ -75,12 +82,28 @@
       <option name="project" value="LOCAL" />
       <updated>1691949286565</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix: reimplement into correct way">
+      <created>1691950107293</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691950107293</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix: reimplement cpp example into correct way">
+      <created>1691950125120</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691950125120</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: dart calculator bindings to cpp" />
     <MESSAGE value="feat: cpp calculator callback example" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: cpp calculator callback example" />
+    <MESSAGE value="fix: reimplement into correct way" />
+    <MESSAGE value="fix: reimplement cpp example into correct way" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: reimplement cpp example into correct way" />
   </component>
 </project>

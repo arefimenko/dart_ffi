@@ -1,0 +1,5 @@
+output: lib/cpp_examples.dart
+name: CppExamples
+headers:
+  entry-points:
+    - "cpp_examples/cpp_examples.h"
