@@ -1,5 +1,10 @@
 #include "calculator.h"
 
+typedef struct Calculator {
+    int result;
+    IntCallback resultCallback;
+} Calculator;
+
 Calculator *createCalc(IntCallback callback) {
     Calculator *calc = new Calculator;
     calc->result = 0;

@@ -4,10 +4,7 @@ extern "C" {
 
 typedef void (*IntCallback)(int);
 
-typedef struct Calculator {
-    int result;
-    IntCallback resultCallback;
-} Calculator;
+struct Calculator;
 
 struct Calculator *createCalc(IntCallback callback);
 

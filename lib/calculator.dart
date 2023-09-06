@@ -114,11 +114,6 @@ class CalculatorBindings {
   late final _getResult = _getResultPtr.asFunction<int Function(ffi.Pointer<Calculator>)>();
 }
 
-final class Calculator extends ffi.Struct {
-  @ffi.Int()
-  external int result;
-
-  external IntCallback resultCallback;
-}
+final class Calculator extends ffi.Opaque {}
 
 typedef IntCallback = ffi.Pointer<ffi.NativeFunction<ffi.Void Function(ffi.Int)>>;
